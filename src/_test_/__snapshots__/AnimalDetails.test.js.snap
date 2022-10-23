@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render AnimalDetails component render HomePage 1`] = `
+<div>
+  <div>
+    <header
+      className="detailsPageHeader"
+    >
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        <img
+          alt=""
+          className="header_img"
+          src="accordion_back.png"
+        />
+      </a>
+      <div
+        className="mic_settings"
+      >
+        <a
+          href="/"
+          onClick={[Function]}
+        >
+          <img
+            alt=""
+            className="header_img settings"
+            src="microphone.png"
+          />
+        </a>
+        <a
+          href="/"
+          onClick={[Function]}
+        >
+          <img
+            alt=""
+            className="header_img"
+            src="settings_icon.svg"
+          />
+        </a>
+      </div>
+    </header>
+  </div>
+  <section
+    className="animals-details-cont"
+  >
+    <div
+      id="details-header"
+    >
+      <img
+        alt=""
+        id="species"
+      />
+      <h1 />
+    </div>
+    <ul
+      className="details"
+    >
+      <li>
+        <h2>
+          Latin Name
+        </h2>
+        <p />
+      </li>
+      <li>
+        <h2>
+          Life Span
+        </h2>
+        <p />
+      </li>
+      <li>
+        <h2>
+          Habitat
+        </h2>
+        <p />
+      </li>
+      <li>
+        <h2>
+          Deit
+        </h2>
+        <p />
+      </li>
+      <li>
+        <h2>
+          Active Time
+        </h2>
+        <p />
+      </li>
+      <li>
+        <h2>
+          Geographical Range
+        </h2>
+        <p />
+      </li>
+      <li>
+        <h2>
+          Weight
+        </h2>
+        <p>
+          Maximum Weight:
+           
+        </p>
+        <p>
+          Minimum Weight:
+           
+        </p>
+      </li>
+      <li>
+        <h2>
+          Length
+        </h2>
+        <p>
+          Maximum Length:
+           
+        </p>
+        <p>
+          Minimum Length:
+           
+        </p>
+      </li>
+    </ul>
+  </section>
+</div>
+`;

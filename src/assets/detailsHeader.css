@@ -1,0 +1,18 @@
+.detailsPageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header_img {
+  width: 20px;
+}
+
+.settings {
+  margin-right: 15px;
+}
+
+.mic_settings {
+  margin-right: 25px;
+}
