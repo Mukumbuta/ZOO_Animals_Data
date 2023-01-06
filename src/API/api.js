@@ -1,43 +1,42 @@
 /* eslint-disable camelcase */
 const ANIMALS_FETCHED = 'ANIMALS_FETCHED';
-const baseURL = 'https://zoo-animal-api.herokuapp.com/animals/rand/10';
+const baseURL = 'https://www.fishwatch.gov/api/species';
 
 const fetchAnimals = () => async (dispatch) => {
   const response = await fetch(baseURL);
   const data = await response.json();
+  console.log(data[0]['Image Gallery']);
   const animals = [];
   data.forEach((res) => {
     const {
-      name,
-      id,
-      animal_type,
-      habitat,
-      diet,
-      image_link,
-      lifespan,
-      latin_name,
-      length_max,
-      length_min,
-      weight_max,
-      weight_min,
-      geo_range,
-      active_time,
+      'Species Name': name,
+      Carbohyddrate,
+      Calories,
+      Cholesterol,
+      Sodium,
+      'Serving Weigth': servingWeigth,
+      Color,
+      'Image Gallery': imageLink,
+      Habitat,
+      Location,
+      Population,
+      Protein,
     } = res;
+    console.log(imageLink);
+
     const animalData = {
       name,
-      id,
-      animal_type,
-      habitat,
-      diet,
-      image_link,
-      lifespan,
-      latin_name,
-      length_max,
-      length_min,
-      weight_max,
-      weight_min,
-      geo_range,
-      active_time,
+      imageLink,
+      Color,
+      Carbohyddrate,
+      Calories,
+      Cholesterol,
+      Sodium,
+      servingWeigth,
+      Habitat,
+      Location,
+      Population,
+      Protein,
     };
     animals.push(animalData);
   });

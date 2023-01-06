@@ -6,61 +6,72 @@ import '../assets/detailsPageStyles.css';
 const DisplayAnimalDetails = () => {
   const { animalsReducer } = useSelector((state) => state);
 
-  let image;
-  let animalName;
-  let lifeSpan;
-  let diet;
-  let geoRange;
-  let activeTime;
-  let latinName;
-  let maxLength;
-  let minLength;
-  let minWeight;
-  let maxWeight;
+  // let image;
+  let name;
+  // let image;
+  let color;
+  let carbohydrateContent;
+  let caloriesContent;
+  let sodiumContent;
+  let servingWeigth;
+  let location;
+  let population;
   let habitat;
+  let protein;
 
   // eslint-disable-next-line
   animalsReducer.map((animalia) => {
     // eslint-disable-next-line
     if (animalia.id == window.location.pathname.slice(1)) {
-      image = animalia.image_link;
-      animalName = animalia.name;
-      lifeSpan = animalia.lifespan;
-      diet = animalia.diet;
-      geoRange = animalia.geo_range;
-      activeTime = animalia.active_time;
-      latinName = animalia.latin_name;
-      maxLength = animalia.length_max;
-      minLength = animalia.length_min;
-      minWeight = animalia.weight_min;
-      maxWeight = animalia.weight_max;
-      habitat = animalia.habitat;
+      // image = animalia.image_link;
+      name = animalia.name;
+      color = animalia.Color;
+      carbohydrateContent = animalia.Carbohydrate;
+      caloriesContent = animalia.Calories;
+      sodiumContent = animalia.Sodium;
+      servingWeigth = animalia.servingWeigth;
+      population = animalia.Population;
+      location = animalia.Location;
+      habitat = animalia.Habitat;
+      protein = animalia.Protein;
     }
   });
 
   return (
     <div>
       <div>
-        <DetailsPageHeader name={animalName} />
+        <DetailsPageHeader name={name} />
       </div>
       <section className="animals-details-cont">
         <div id="details-header">
-          <img src={image} id="species" alt="" />
+          {/* <img src={image} id="species" alt="" /> */}
           <h1>
-            {animalName}
+            {name}
           </h1>
         </div>
         <ul className="details">
           <li>
-            <h2>Latin Name</h2>
+            <h2>Species Name</h2>
             <p>
-              {latinName}
+              {name}
             </p>
           </li>
           <li>
-            <h2>Life Span</h2>
+            <h2>Carbohydrate Content</h2>
             <p>
-              {lifeSpan}
+              {carbohydrateContent}
+            </p>
+          </li>
+          <li>
+            <h2>Calories Content</h2>
+            <p>
+              {caloriesContent}
+            </p>
+          </li>
+          <li>
+            <h2>Protein Content</h2>
+            <p>
+              {protein}
             </p>
           </li>
           <li>
@@ -70,49 +81,34 @@ const DisplayAnimalDetails = () => {
             </p>
           </li>
           <li>
-            <h2>Deit</h2>
+            <h2>Serving Weigth</h2>
             <p>
-              {diet}
+              {servingWeigth}
             </p>
           </li>
           <li>
-            <h2>Active Time</h2>
+            <h2>Location</h2>
             <p>
-              {activeTime}
+              {location}
             </p>
           </li>
           <li>
-            <h2>Geographical Range</h2>
+            <h2>Population</h2>
             <p>
-              {geoRange}
-            </p>
-          </li>
-
-          <li>
-            <h2>Weight</h2>
-            <p>
-              Maximum Weight:
-              {' '}
-              {maxWeight}
-            </p>
-            <p>
-              Minimum Weight:
-              {' '}
-              {minWeight}
+              {population}
             </p>
           </li>
 
           <li>
-            <h2>Length</h2>
+            <h2>Sodium Content</h2>
             <p>
-              Maximum Length:
-              {' '}
-              {maxLength}
+              {sodiumContent}
             </p>
+          </li>
+          <li>
+            <h2>Color</h2>
             <p>
-              Minimum Length:
-              {' '}
-              {minLength}
+              {color}
             </p>
           </li>
         </ul>
