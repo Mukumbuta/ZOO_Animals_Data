@@ -15,13 +15,6 @@ const Animal = () => {
     dispatch(fetchAnimals());
   }, [dispatch]);
 
-  console.log(animalList[0].imageLink);
-  const images = animalList[0].imageLink;
-  console.log(images);
-  images.forEach((element) => {
-    console.log(element);
-  });
-
   return (
     <div className="animals-cont">
       <Header />
@@ -48,7 +41,7 @@ const Animal = () => {
               <div key={animal.id}>
                 <div className="animal_images">
                   <div className="img_accordion">
-                    <img src={animal.imageLink} className="anim_img" alt={animal.name} />
+                    <img src={animal.actualimagelink} className="anim_img" alt={animal.name} />
                     <img src={acordionImg} className="accordion" alt="" />
                   </div>
                 </div>

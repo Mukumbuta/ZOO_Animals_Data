@@ -22,23 +22,27 @@ const fetchAnimals = () => async (dispatch) => {
       Population,
       Protein,
     } = res;
-    console.log(imageLink);
-
-    const animalData = {
-      name,
-      imageLink,
-      Color,
-      Carbohyddrate,
-      Calories,
-      Cholesterol,
-      Sodium,
-      servingWeigth,
-      Habitat,
-      Location,
-      Population,
-      Protein,
-    };
-    animals.push(animalData);
+    
+    const images = imageLink;
+    for (const key in images) {
+      const actualimagelink = images[key].src;
+      const animalData = {
+        name,
+        actualimagelink,
+        Color,
+        Carbohyddrate,
+        Calories,
+        Cholesterol,
+        Sodium,
+        servingWeigth,
+        Habitat,
+        Location,
+        Population,
+        Protein,
+      };
+      animals.push(animalData);
+    }
+    
   });
   dispatch({
     type: ANIMALS_FETCHED,
