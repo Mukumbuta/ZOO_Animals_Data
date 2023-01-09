@@ -6,9 +6,8 @@ import '../assets/detailsPageStyles.css';
 const DisplayAnimalDetails = () => {
   const { animalsReducer } = useSelector((state) => state);
 
-  // let image;
+  let image;
   let name;
-  // let image;
   let color;
   let carbohydrateContent;
   let caloriesContent;
@@ -22,8 +21,8 @@ const DisplayAnimalDetails = () => {
   // eslint-disable-next-line
   animalsReducer.map((animalia) => {
     // eslint-disable-next-line
-    if (animalia.id == window.location.pathname.slice(1)) {
-      // image = animalia.image_link;
+    if (animalia.fish_id == window.location.pathname.slice(1)) {
+      image = animalia.actualimagelink;
       name = animalia.name;
       color = animalia.Color;
       carbohydrateContent = animalia.Carbohydrate;
@@ -44,7 +43,7 @@ const DisplayAnimalDetails = () => {
       </div>
       <section className="animals-details-cont">
         <div id="details-header">
-          {/* <img src={image} id="species" alt="" /> */}
+          <img src={image} id="species" alt="" />
           <h1>
             {name}
           </h1>
@@ -81,7 +80,7 @@ const DisplayAnimalDetails = () => {
             </p>
           </li>
           <li>
-            <h2>Serving Weigth</h2>
+            <h2>Serving Weight</h2>
             <p>
               {servingWeigth}
             </p>

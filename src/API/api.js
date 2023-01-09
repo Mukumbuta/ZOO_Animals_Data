@@ -1,12 +1,14 @@
 /* eslint-disable camelcase */
+import { v4 as uuidv4 } from 'uuid';
+
 const ANIMALS_FETCHED = 'ANIMALS_FETCHED';
 const baseURL = 'https://www.fishwatch.gov/api/species';
 
 const fetchAnimals = () => async (dispatch) => {
   const response = await fetch(baseURL);
   const data = await response.json();
-  console.log(data[0]['Image Gallery']);
   const animals = [];
+
   data.forEach((res) => {
     const {
       'Species Name': name,
@@ -22,12 +24,16 @@ const fetchAnimals = () => async (dispatch) => {
       Population,
       Protein,
     } = res;
-    
+
     const images = imageLink;
+    /* eslint-disable no-restricted-syntax */
+    /* eslint-disable guard-for-in */
     for (const key in images) {
       const actualimagelink = images[key].src;
+      const fish_id = uuidv4();
       const animalData = {
         name,
+        fish_id,
         actualimagelink,
         Color,
         Carbohyddrate,
@@ -42,7 +48,6 @@ const fetchAnimals = () => async (dispatch) => {
       };
       animals.push(animalData);
     }
-    
   });
   dispatch({
     type: ANIMALS_FETCHED,

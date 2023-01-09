@@ -34,8 +34,8 @@ header {
     cursor-blink 3s step-end 1;
 }
 
-.sec_text {
-  font-weight: 500;
+.secText {
+  font-weight: 600;
 }
 
 /* Animation */

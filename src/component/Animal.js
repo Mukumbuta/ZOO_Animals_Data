@@ -37,8 +37,8 @@ const Animal = () => {
               return searchItem;
             }
           }).map((animal) => (
-            <Link key={animal.id} className="content-cont" to={`/${animal.id}`}>
-              <div key={animal.id}>
+            <Link key={animal.fish_id} className="content-cont" to={`/${animal.fish_id}`}>
+              <div key={animal.fish_id}>
                 <div className="animal_images">
                   <div className="img_accordion">
                     <img src={animal.actualimagelink} className="anim_img" alt={animal.name} />

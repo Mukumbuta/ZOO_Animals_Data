@@ -59,13 +59,25 @@ exports[`Render AnimalDetails component render HomePage 1`] = `
     >
       <li>
         <h2>
-          Latin Name
+          Species Name
         </h2>
         <p />
       </li>
       <li>
         <h2>
-          Life Span
+          Carbohydrate Content
+        </h2>
+        <p />
+      </li>
+      <li>
+        <h2>
+          Calories Content
+        </h2>
+        <p />
+      </li>
+      <li>
+        <h2>
+          Protein Content
         </h2>
         <p />
       </li>
@@ -77,47 +89,33 @@ exports[`Render AnimalDetails component render HomePage 1`] = `
       </li>
       <li>
         <h2>
-          Deit
+          Serving Weight
         </h2>
         <p />
       </li>
       <li>
         <h2>
-          Active Time
+          Location
         </h2>
         <p />
       </li>
       <li>
         <h2>
-          Geographical Range
+          Population
         </h2>
         <p />
       </li>
       <li>
         <h2>
-          Weight
+          Sodium Content
         </h2>
-        <p>
-          Maximum Weight:
-           
-        </p>
-        <p>
-          Minimum Weight:
-           
-        </p>
+        <p />
       </li>
       <li>
         <h2>
-          Length
+          Color
         </h2>
-        <p>
-          Maximum Length:
-           
-        </p>
-        <p>
-          Minimum Length:
-           
-        </p>
+        <p />
       </li>
     </ul>
   </section>

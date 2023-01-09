@@ -1,16 +1,16 @@
-const animals = () => Promise.resolve({
+const shoal = () => Promise.resolve({
   data: [
     {
-      name: 'Arctic Fox',
-      habitat: 'Arctic tundra',
-      life_span: 6,
+      'Species Name': 'Crimson Jobfish',
+      'Calories Content': 100,
+      Population: 'The population level is unknown, but the stock is contained in 5 bottomfish complexes whose status ranges from overfished to not overfished to unknown.',
     },
     {
-      name: 'Timber Rattlesnake',
-      habitat: 'rocky hilltops, swamps',
-      life_span: 20,
+      'Species Name': 'Atlantic Chub Mackerel',
+      'Calories Content': 205,
+      Population: ' The stock has never been assessed. The population level is unknown but presumed stable.',
     },
   ],
 });
 
-export default animals;
+export default shoal;

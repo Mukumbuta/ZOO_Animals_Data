@@ -10,7 +10,7 @@ exports[`Should render Animal component Should render HomePage 1`] = `
     <img
       alt=""
       className="logo"
-      src="zoo_animals.png"
+      src="shoal.png"
     />
     <div
       className="heading"
@@ -18,12 +18,12 @@ exports[`Should render Animal component Should render HomePage 1`] = `
       <h1
         className="header_text"
       >
-        ZOO Animals
+        Aqua Nutri
       </h1>
       <p
         className="secText"
       >
-        All animal types
+        Fish Nutrition Data
       </p>
     </div>
   </header>
