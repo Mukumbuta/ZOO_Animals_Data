@@ -1,105 +1,193 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+<a name="readme-top"></a>
 
-# Metrics Web App 
+<div align="center">
 
-> This is a web application where users can get all the information about any particular animal. The web app fetches data from the ZOO animals API using React-Redux.
+  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
 
-## Home page:
-<img width="260" alt="Screenshot of the Home page" src="./src/asset/ZOO_Home.png">
+  <h3><b>Microverse README Template</b></h3>
 
-## Details page:
-<img width="260" alt="Screenshot of the Details page" src="./src/asset/ZOO_Details.png">
+</div>
 
-## Built With
 
-- React.js
-- Redux
-- JavaScript
-- CSS3
-- Zoo Animal API
+# 📗 Table of Contents
 
-## Live Demo
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ](#faq)
+- [📝 License](#license)
+
+
+# 📖 [CMS_Bookstore] <a name="about-project"></a>
+
+**[Metrics Web App]** is a web app that provide users with all the up-to-date fish nutritional data
+
+
+## 🛠 Built With <a name="built-with"></a>
+
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Languages</summary>
+  <ul>
+    <li><a href="https://developer.mozilla.org/">JavaScript</a></li>
+  </ul>
+  <ul>
+    <li><a href="https://developer.mozilla.org/">CSS</a></li>
+  </ul>
+  <ul>
+    <li><a href="https://developer.mozilla.org/">HTML</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Framework</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+  </ul>
+  <ul>
+    <li><a href="https://redux.org/">Redux</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Other Technologies</summary>
+  <ul>
+    <li><a href="https://npmjs.com/">NPM</a></li>
+  </ul>
+  <ul>
+    <li><a href="https://git-scm.com/">Git</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="http://localhost:3000/">Local Host</a></li>
+  </ul>
+  <ul>
+    <li><a href="https://www.fishwatch.gov/api/species">Fishwatch Server</a></li>
+  </ul>
+</details>
+
+<details>
+
+### Key Features <a name="key-features"></a>
+
+- **[Besutiful and easy to navigate UI]**
+- **[home page provides image of diferent kinds of fish]**
+- **[Clicking on fish image, redirects to the Details page which displays more details about a single fish]**
+
+### Live Demo <a name="live-demo"><a/>
 
 [Live Demo Link](https://6353fc30e201e025ac94a060--zoodata.netlify.app/)
 
-## Video
+### Video <a name="video"><a/>
 
 [Video Link](https://www.loom.com/share/d6d1d29feb7248ebb08ef003e0cbf4be)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Getting Started
 
-> To get a local copy up and running please follow these steps:
+## 💻 Getting Started <a name="getting-started"></a>
 
-- Open the command prompt in this directory.
+To get a local copy up and running, follow these steps.
 
-- Clone of the Repo:
+### Prerequisites
 
-      $ git clone https://github.com/Mukumbuta/Metrics-Web-App.git
-
-- Go to the repository folder in your command prompt:
-
-      $ cd Metrics-Web-App
-
-- Start the app:
-
-      $ npm start
-
-## Prerequisites
-
-- Code editor (VS Code)
+In order to run this project you need:
+- Node 
+- npm
 
 ### Setup
 
-- to create a React application is using Create React App (CRA) and following the instructions in this [guide](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app)
-```
-npx create-react-app bookstore-react
-cd bookstore-react
-npm start
-```
--  Add React Redux
- ```
-npm install react-redux
-```
-- Add React Router [React Router](https://v5.reactrouter.com/web/guides/quick-start)
+Clone this repository to your desired folder:
 
-## How to run the test
-- Skip if you have Node installed. Otherwise, download [nodejs](https://nodejs.org/en/download/) install it on your system
-- Install the node modules: 
-```
-npm install
+```sh
+  cd your-folder
+  git@github.com:Mukumbuta/CMS_Bookstore.git
 ```
 
-- Run the tests: 
-```
-npm test
-```
-- or
+### Install
+
+Install this project with:
+
+```sh
+  cd React-Math-Magicians
+  npm install
 ```
 
-## Author
+### Usage
+
+To run the project, execute the following command:
+
+```sh
+  npm run build
+  npm run start
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 👥 Authors <a name="authors"></a>
 
 👤 **Emmanuel Simasiku**
 
 - GitHub: [@Mukumbuta](https://github.com/Mukumbuta)
-- Twitter: [@Mukumbuta](https://twitter.com/Mukumbuta8)
-- LinkedIn: [@Mukumbuta](https://www.linkedin.com/in/Mukumbuta/)
-- AngelList: [AngelList Profile](https://angel.co/u/emmanuel-simasiku)
+- Twitter: [@Mukumbuta8](https://twitter.com/Mukumbuta8)
+- LinkedIn: [Mukumbuta](https://linkedin.com/in/mukumbuta)
 
-## 🤝 Contributing
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
->Contributions, issues, and feature requests are welcome!
->Feel free to check the [issues page](../../issues/).
 
-## Show your support
+## 🔭 Future Features <a name="future-features"></a>
 
->Give a ⭐️ if you like this project!
+- [ ] **[Conservation and Migrations]**
+- [ ] **[Diferent preparation methods]**
 
-## Acknowledgments
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- This project built in Microverse's  Module 3 Capstone Project week.
-- Nelson Sakwa on whose original design this project is based. 
 
-## 📝 License
+## 🤝 Contributing <a name="contributing"></a>
 
->This project is [MIT](./MIT.md) licensed.
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project and you find it helpful, please give this project a star.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+This project is based on the work of [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) on whose original design this project is based.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
