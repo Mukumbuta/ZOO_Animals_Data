@@ -89,13 +89,13 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[Besutiful and easy to navigate UI]**
+- **[Beautiful and easy to navigate UI]**
 - **[home page provides image of diferent kinds of fish]**
 - **[Clicking on fish image, redirects to the Details page which displays more details about a single fish]**
 
 ### Live Demo <a name="live-demo"><a/>
 
-[Live Demo Link](https://6353fc30e201e025ac94a060--zoodata.netlify.app/)
+[Live Demo Link](https://fishnutri.netlify.app/)
 
 ### Video <a name="video"><a/>
 
