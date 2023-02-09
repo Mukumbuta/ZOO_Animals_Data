@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render Animal component Should render HomePage 1`] = `
+<div
+  className="animals-cont"
+>
+  <header
+    className="header"
+  >
+    <img
+      alt=""
+      className="logo"
+      src="shoal.png"
+    />
+    <div
+      className="heading"
+    >
+      <h1
+        className="header_text"
+      >
+        Aqua Nutri
+      </h1>
+      <p
+        className="secText"
+      >
+        Fish Nutrition Data
+      </p>
+    </div>
+  </header>
+  <div
+    className="search-bar-cont"
+  >
+    <input
+      id="search-input"
+      onChange={[Function]}
+      placeholder="Search"
+      type="text"
+    />
+  </div>
+  <div
+    id="home_content_cont"
+  >
+    <p>
+      Just a moment please...
+    </p>
+  </div>
+</div>
+`;
